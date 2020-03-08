@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WSJ Print Graphics</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Every print graphic I ever made for The Wall Street Journal. All 232 of them.">
+  <meta name="keywords" content="tynan debold, tynandebold, tynan, debold, developer, designer, print design, graphic design, interactive developer, data visualization, data viz, dataviz, front-end developer, the wall street journal, wsj, media, journalism">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Three Years of Print</h1>
+    <h2>Every print graphic I ever made for <i>The Wall Street Journal</i>. All 232 of them.</h2>
+    <hr>
+  </header>
+  <div id="root">
+    <div class="img-wrapper" v-for="(gamsURL, index) in gamsURLs">
+      <img :src="gamsURL.url" alt="WSJ print graphic">
+    </div>
+  </div>
+  <script src="js/vue.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
